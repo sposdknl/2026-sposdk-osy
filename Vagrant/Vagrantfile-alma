@@ -1,0 +1,17 @@
+IMAGE_NAME = "bento/almalinux-9"
+
+Vagrant.configure("2") do |config|
+    config.ssh.insert_key = false
+
+    config.vm.provider "virtualbox " do |v|
+        v.allowlist_verified = true
+        v.memory = 1024
+        v.cpus = 1
+    end
+
+    config.vm.define "alma" do |alma|
+        alma.vm.box = IMAGE_NAME
+        alma.vm.network "forwarded_port", guest: 22, host: 2201, host_ip: "127.0.0.1"
+        alma.vm.hostname = "almalinux"
+    end
+end

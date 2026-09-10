@@ -1,0 +1,17 @@
+IMAGE_NAME = "kalilinux/rolling"
+
+Vagrant.configure("2") do |config|
+    config.ssh.insert_key = false
+
+    config.vm.provider "virtualbox" do |v|
+        v.memory = 2048
+        v.cpus = 2
+    end
+
+    config.vm.define "kali" do |kali|
+        kali.vm.box = IMAGE_NAME
+        kali.vm.network "forwarded_port", guest: 22, host: 2209, host_ip: "127.0.0.1"
+	    kali.vm.hostname = "kali"
+    end
+
+end

@@ -1,0 +1,25 @@
+zabbix_export:
+  version: '7.0'
+  host_groups:
+    - uuid: ec50fa856fa542bbba85796d423c2e92
+      name: Customer/SPOS
+    - uuid: f2481361f99448eea617b7b1d4765566
+      name: 'Discovered hosts'
+  hosts:
+    - host: fbsdsrv01-5e37c382
+      name: fbsdsrv01-5e37c382
+      templates:
+        - name: 'Linux by Zabbix agent active'
+      groups:
+        - name: Customer/SPOS
+        - name: 'Discovered hosts'
+      interfaces:
+        - ip: 86.49.188.67
+          dns: ip-86-49-188-67.net.vodafone.cz
+          interface_ref: if1
+      tags:
+        - tag: OS
+          value: Linux
+      inventory:
+        name: fbsd14
+      inventory_mode: AUTOMATIC

@@ -1,0 +1,12 @@
+---
+- name: Install Zabbix Agent via Role
+  ansible.builtin.include_role:
+    name: community.zabbix.zabbix_agent
+  vars:
+    zabbix_agent_version: 7.0
+    zabbix_agent2: true
+    zabbix_agent_hostname: "{{ inventory_hostname }}"
+    zabbix_agent_listenip: "{{ ansible_host }}"
+    zabbix_agent_server: "192.168.1.2,172.16.0.0/12"
+    zabbix_agent_serveractive: 192.168.1.2
+    zabbix_agent_host_state: present

@@ -1,0 +1,26 @@
+---
+- name: Install and prepare Ansible
+  hosts: all
+  become: true
+  tasks:
+  
+  - name: Update and upgrade
+    ansible.builtin.apt:
+      update_cache: true
+      name:
+        - git
+        - sshpass
+        - net-tools
+        - joe
+        - mc
+      state: present
+
+  - name: Install Ansible collections
+    ansible.builtin.command:
+      cmd: ansible-galaxy collection install community.zabbix --force
+
+  - name: Cloning Git repository
+    ansible.builtin.git:
+      repo: 'https://github.com/sposdknl/2026-sposdk-osy'
+      dest: /opt/repo
+...

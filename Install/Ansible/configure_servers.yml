@@ -1,0 +1,24 @@
+---
+- name: Configure managed nodes
+  hosts: bastion
+  become: true
+  tasks:
+    - name: Update and install Git
+      ansible.builtin.apt:
+        update_cache: true
+        name:
+          - git
+          - net-tools
+          - joe
+          - mc
+          
+    - name: Preinstall Docker
+      ansible.builtin.import_tasks: /opt/repo/Install/Ansible/pre-install-docker.yml
+
+- name: Install Zabbix agent2
+  hosts: all
+  become: true
+  tasks:
+    - name: Import tasks for installation
+      ansible.builtin.import_tasks: /opt/repo/Install/Ansible/install-zabbix-agent2.yml
+...
