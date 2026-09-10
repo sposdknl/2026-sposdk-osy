@@ -1,4 +1,4 @@
-IMAGE_NAME = "bento/centos-stream-9"
+IMAGE_NAME = "bento/centos-stream-10"
 
 Vagrant.configure("2") do |config|
     config.ssh.insert_key = false
@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "centos" do |centos|
         centos.vm.box = IMAGE_NAME
         centos.vm.network "forwarded_port", guest: 22, host: 2202, host_ip: "127.0.0.1"
-        centos.vm.hostname = "centos"
+        centos.vm.hostname = "centos10"
     end
 
 end

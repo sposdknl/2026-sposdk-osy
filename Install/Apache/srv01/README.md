@@ -1,10 +1,10 @@
 
 # SRV01
-## Install Apache on Debian 12
+## Install Apache on Debian 13
 
 ![Debian and Apache OSY AI](../Images/Debian-Apache.png)
 
-- Vagrant box Debian 12
+- Vagrant box Debian 13
 - SSH kic id_ed25519.pub
 - Install Apache2
 

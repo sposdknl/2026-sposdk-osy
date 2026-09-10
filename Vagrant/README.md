@@ -1,14 +1,14 @@
 # Vagrant
 
-- Almalinux 9 [bento/almalinux-9](https://portal.cloud.hashicorp.com/vagrant/discover/bento/almalinux-9)
-- CentOS Stream 9 [bento/centos-stream-9](https://portal.cloud.hashicorp.com/vagrant/discover/bento/centos-stream-9)
-- Rocky Linux 9 [bento/rockylinux-9](https://portal.cloud.hashicorp.com/vagrant/discover/bento/rockylinux-9)
-- Fedora 41 [bento/fedora-42](https://portal.cloud.hashicorp.com/vagrant/discover/bento/fedora-42)
-- Oracle Linux 9 [bento/oraclelinux-9](https://portal.cloud.hashicorp.com/vagrant/discover/bento/oraclelinux-9)
-- Debian 12 [bento/debian-12](https://portal.cloud.hashicorp.com/vagrant/discover/bento/debian-12)
-- Ubuntu 24.04 LTS [bento/ubuntu-24.04](https://portal.cloud.hashicorp.com/vagrant/discover/bento/ubuntu-24.04)
-- OpenSUSE 15.5 [bento/opensuse-15.5](https://portal.cloud.hashicorp.com/vagrant/discover/bento/opensuse-15.5)
-- FreeBSD 14.3 RELEASE [bento/freebsd-14.3](https://portal.cloud.hashicorp.com/vagrant/discover/bento/freebsd-14.3)
+- AlmaLinux 10 [bento/almalinux-10](https://portal.cloud.hashicorp.com/vagrant/discover/bento/almalinux-10)
+- CentOS Stream 10 [bento/centos-stream-10](https://portal.cloud.hashicorp.com/vagrant/discover/bento/centos-stream-10)
+- Rocky Linux 10 [bento/rockylinux-10](https://portal.cloud.hashicorp.com/vagrant/discover/bento/rockylinux-10)
+- Fedora 44 [bento/fedora-44](https://portal.cloud.hashicorp.com/vagrant/discover/bento/fedora-44)
+- Oracle Linux 10 [bento/oraclelinux-10](https://portal.cloud.hashicorp.com/vagrant/discover/bento/oraclelinux-10)
+- Debian 13 [bento/debian-13](https://portal.cloud.hashicorp.com/vagrant/discover/bento/debian-13)
+- Ubuntu 26.04 LTS [bento/ubuntu-26.04](https://portal.cloud.hashicorp.com/vagrant/discover/bento/ubuntu-26.04)
+- openSUSE Leap 16 [bento/opensuse-leap-16](https://portal.cloud.hashicorp.com/vagrant/discover/bento/opensuse-leap-16)
+- FreeBSD 15.1-RELEASE [freebsd/FreeBSD-15.1-RELEASE](https://portal.cloud.hashicorp.com/vagrant/discover/freebsd/FreeBSD-15.1-RELEASE)
 
 - Website: [https://www.vagrantup.com/](https://www.vagrantup.com/)
 - Source: [https://github.com/hashicorp/vagrant](https://github.com/hashicorp/vagrant)

@@ -1,4 +1,4 @@
-IMAGE_NAME = "bento/rockylinux-9"
+IMAGE_NAME = "bento/rockylinux-10"
 
 Vagrant.configure("2") do |config|
     config.ssh.insert_key = false
@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "rocky" do |rocky|
         rocky.vm.box = IMAGE_NAME
         rocky.vm.network "forwarded_port", guest: 22, host: 2203, host_ip: "127.0.0.1"
-        rocky.vm.hostname = "rockylinux"
+        rocky.vm.hostname = "rockylinux10"
     end
 
 end
