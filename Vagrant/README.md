@@ -6,7 +6,7 @@
 - Fedora 43 [bento/fedora-43](https://portal.cloud.hashicorp.com/vagrant/discover/bento/fedora-43)
 - Oracle Linux 10 [bento/oraclelinux-10](https://portal.cloud.hashicorp.com/vagrant/discover/bento/oraclelinux-10)
 - Debian 13 [bento/debian-13](https://portal.cloud.hashicorp.com/vagrant/discover/bento/debian-13)
-- Ubuntu 26.04 LTS [bento/ubuntu-26.04](https://portal.cloud.hashicorp.com/vagrant/discover/bento/ubuntu-26.04)
+- Ubuntu 24.04 LTS [bento/ubuntu-24.04](https://portal.cloud.hashicorp.com/vagrant/discover/bento/ubuntu-24.04)
 - openSUSE Leap 15 [bento/opensuse-leap-15](https://portal.cloud.hashicorp.com/vagrant/discover/bento/opensuse-leap-15)
 - FreeBSD 14.1-STABLE [freebsd/FreeBSD-14.1-STABLE](https://portal.cloud.hashicorp.com/vagrant/discover/freebsd/FreeBSD-14.1-STABLE)
 
