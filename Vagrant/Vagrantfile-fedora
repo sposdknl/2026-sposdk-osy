@@ -1,4 +1,4 @@
-IMAGE_NAME = "bento/fedora-44"
+IMAGE_NAME = "bento/fedora-43"
 
 Vagrant.configure("2") do |config|
     config.ssh.insert_key = false
@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "fedora" do |fedora|
         fedora.vm.box = IMAGE_NAME
         fedora.vm.network "forwarded_port", guest: 22, host: 2204, host_ip: "127.0.0.1"
-        fedora.vm.hostname = "fedora44"
+        fedora.vm.hostname = "fedora43"
     end
 
 end
