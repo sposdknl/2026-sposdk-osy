@@ -14,7 +14,7 @@ sudo gsed -i "s/Hostname=Zabbix server/Hostname=$SHORT_HOSTNAME/g" $ZBX_AGENT_CO
 sudo gsed -i 's/Server=127.0.0.1/Server=enceladus.pfsense.cz/g' $ZBX_AGENT_CONF
 sudo gsed -i 's/ServerActive=127.0.0.1/ServerActive=enceladus.pfsense.cz/g' $ZBX_AGENT_CONF
 sudo gsed -i 's/# Timeout=3/Timeout=30/g' $ZBX_AGENT_CONF
-sudo gsed -i 's/# HostMetadata=/HostMetadata=SPOS/g' $ZBX_AGENT_CONF
+sudo gsed -i 's/# HostMetadata=/HostMetadata=FBSD/g' $ZBX_AGENT_CONF
 sudo diff -u $ZBX_AGENT_CONF-orig $ZBX_AGENT_CONF
 
 # Restart sluzby zabbix-agentd
