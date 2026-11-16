@@ -17,8 +17,8 @@ V tomto adresáři jsou výchozí soubory `Vagrantfile` pro různé operační s
 | [`Vagrantfile-ubuntu`](Vagrantfile-ubuntu) | Ubuntu 24.04 LTS · `bento/ubuntu-24.04` | `2207` |
 | [`Vagrantfile-opensuse`](Vagrantfile-opensuse) | openSUSE Leap 15 · `bento/opensuse-leap-15` | `2208` |
 | [`Vagrantfile-kali`](Vagrantfile-kali) | Kali Linux Rolling · `kalilinux/rolling` | `2209` |
-| [`Vagrantfile-fbsd`](Vagrantfile-fbsd) | FreeBSD 14.1-STABLE · `bento/FreeBSD-14.3` | `2210` |
-| [`Vagrantfile-bento-fbsd`](Vagrantfile-bento-fbsd) | FreeBSD 15.0-CURRENT · `freebsd/FreeBSD-15.0-CURRENT` | `2211` |
+| [`Vagrantfile-fbsd`](Vagrantfile-fbsd) | FreeBSD 15.0-CURRENT · `freebsd/15.0-CURRENT` | `2210` |
+| [`Vagrantfile-bento-fbsd`](Vagrantfile-bento-fbsd) | FreeBSD 14.3-RELEASE · `bento/FreeBSD-14.3` | `2211` |
 
 Oba soubory pro FreeBSD používají stejný box; liší se přesměrovaným SSH portem.
 
