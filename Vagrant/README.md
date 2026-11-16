@@ -1,66 +1,38 @@
-# Vagrant
+# Vagrant: ukázkové virtuální stroje
 
-- AlmaLinux 10 [bento/almalinux-10](https://portal.cloud.hashicorp.com/vagrant/discover/bento/almalinux-10)
-- CentOS Stream 10 [bento/centos-stream-10](https://portal.cloud.hashicorp.com/vagrant/discover/bento/centos-stream-10)
-- Rocky Linux 10 [bento/rockylinux-10](https://portal.cloud.hashicorp.com/vagrant/discover/bento/rockylinux-10)
-- Fedora 43 [bento/fedora-43](https://portal.cloud.hashicorp.com/vagrant/discover/bento/fedora-43)
-- Oracle Linux 10 [bento/oraclelinux-10](https://portal.cloud.hashicorp.com/vagrant/discover/bento/oraclelinux-10)
-- Debian 13 [bento/debian-13](https://portal.cloud.hashicorp.com/vagrant/discover/bento/debian-13)
-- Ubuntu 24.04 LTS [bento/ubuntu-24.04](https://portal.cloud.hashicorp.com/vagrant/discover/bento/ubuntu-24.04)
-- openSUSE Leap 15 [bento/opensuse-leap-15](https://portal.cloud.hashicorp.com/vagrant/discover/bento/opensuse-leap-15)
-- FreeBSD 14.1-STABLE [freebsd/FreeBSD-14.1-STABLE](https://portal.cloud.hashicorp.com/vagrant/discover/freebsd/FreeBSD-14.1-STABLE)
+![Více virtuálních strojů propojených do jedné laboratorní sítě](../Images/vagrant-vm-gallery.webp)
 
-- Website: [https://www.vagrantup.com/](https://www.vagrantup.com/)
-- Source: [https://github.com/hashicorp/vagrant](https://github.com/hashicorp/vagrant)
-- HashiCorp Discuss: [https://discuss.hashicorp.com/c/vagrant/24](https://discuss.hashicorp.com/c/vagrant/24)
+V tomto adresáři jsou výchozí soubory `Vagrantfile` pro různé operační systémy. Každý soubor popisuje jeden virtuální stroj pro VirtualBox: použitý box, název stroje, jeho parametry a přesměrování SSH na `127.0.0.1` hostitelského počítače. Soubory slouží jako příklady k úpravě podle konkrétní úlohy.
 
-Vagrant is a tool for building and distributing development environments.
+## Přehled souborů
 
-Development environments managed by Vagrant can run on local virtualized
-platforms such as VirtualBox or VMware, in the cloud via AWS or OpenStack,
-or in containers such as with Docker or raw LXC.
+| Soubor | Operační systém / box | SSH port na hostiteli |
+| --- | --- | ---: |
+| [`Vagrantfile-alma`](Vagrantfile-alma) | AlmaLinux 10 · `bento/almalinux-10` | `2201` |
+| [`Vagrantfile-centos`](Vagrantfile-centos) | CentOS Stream 10 · `bento/centos-stream-10` | `2202` |
+| [`Vagrantfile-rocky`](Vagrantfile-rocky) | Rocky Linux 10 · `bento/rockylinux-10` | `2203` |
+| [`Vagrantfile-fedora`](Vagrantfile-fedora) | Fedora 43 · `bento/fedora-43` | `2204` |
+| [`Vagrantfile-oraclelinux`](Vagrantfile-oraclelinux) | Oracle Linux 10 · `bento/oraclelinux-10` | `2205` |
+| [`Vagrantfile-debian`](Vagrantfile-debian) | Debian 13 · `bento/debian-13` | `2206` |
+| [`Vagrantfile-ubuntu`](Vagrantfile-ubuntu) | Ubuntu 24.04 LTS · `bento/ubuntu-24.04` | `2207` |
+| [`Vagrantfile-opensuse`](Vagrantfile-opensuse) | openSUSE Leap 15 · `bento/opensuse-leap-15` | `2208` |
+| [`Vagrantfile-kali`](Vagrantfile-kali) | Kali Linux Rolling · `kalilinux/rolling` | `2209` |
+| [`Vagrantfile-fbsd`](Vagrantfile-fbsd) | FreeBSD 14.1-STABLE · `bento/FreeBSD-14.3` | `2210` |
+| [`Vagrantfile-bento-fbsd`](Vagrantfile-bento-fbsd) | FreeBSD 15.0-CURRENT · `freebsd/FreeBSD-15.0-CURRENT` | `2211` |
 
-Vagrant provides the framework and configuration format to create and
-manage complete portable development environments. These development
-environments can live on your computer or in the cloud, and are portable
-between Windows, Mac OS X, and Linux.
+Oba soubory pro FreeBSD používají stejný box; liší se přesměrovaným SSH portem.
 
-## Quick Start
+## Jak příklad použít
 
-Package dependencies: Vagrant requires `bsdtar` and `curl` to be available on
-your system PATH to run successfully.
+Nainstalujte Vagrant a VirtualBox. Vybraný soubor zkopírujte do pracovního adresáře pod názvem `Vagrantfile`. Pro úlohu se Zabbix Agent 2 začněte Debianem 13. Po zkopírování upravte `Vagrantfile` podle zadání v [hlavním README](../README.md): doplňte automatickou instalaci agenta pomocí provisioningu. Zdejší soubor pro Debian je pouze výchozí konfigurace virtuálního stroje; Zabbix Agent 2 sám neinstaluje.
 
-For the quick-start, we'll bring up a development machine on
-[VirtualBox](https://www.virtualbox.org/) because it is free and works
-on all major platforms. Vagrant can, however, work with almost any
-system such as [OpenStack](https://www.openstack.org/), [VMware](https://www.vmware.com/), [Docker](https://docs.docker.com/), etc.
+Příklad příkazů z kořene repozitáře (úpravu souboru proveďte před `vagrant up`):
 
-First, make sure your development machine has
-[VirtualBox](https://www.virtualbox.org/)
-installed. After this,
-[download and install the appropriate Vagrant package for your OS](https://www.vagrantup.com/downloads.html).
+```bash
+cp Vagrant/Vagrantfile-debian Vagrantfile
+vagrant validate
+vagrant up
+vagrant ssh
+```
 
-To build your first virtual environment:
-
-    vagrant init hashicorp/bionic64
-    vagrant up
-
-Note: The above `vagrant up` command will also trigger Vagrant to download the
-`bionic64` box via the specified URL. Vagrant only does this if it detects that
-the box doesn't already exist on your system.
-
-## Getting Started Guide
-
-To learn how to build a fully functional development environment, follow the
-[getting started guide](https://www.vagrantup.com/docs/getting-started).
-
-## Installing from Source
-
-If you want the bleeding edge version of Vagrant, we try to keep main pretty stable
-and you're welcome to give it a shot. Please review the installation page [here](https://www.vagrantup.com/docs/installation/source).
-
-## Contributing to Vagrant
-
-Please take time to read the [HashiCorp Community Guidelines](https://www.hashicorp.com/community-guidelines) and the [Vagrant Contributing Guide](https://github.com/hashicorp/vagrant/blob/main/.github/CONTRIBUTING.md).
-
-Then you're good to go!
+Virtuální stroj vypnete příkazem `vagrant halt`. Při kopírování jiného příkladu si zkontrolujte box, název stroje, SSH port a nastavení provideru.
