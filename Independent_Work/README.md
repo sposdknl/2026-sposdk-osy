@@ -2,7 +2,7 @@
 
 Repozitář pro samostatné práce z předmětu Operační systémy zaměřené na Git, Vagrant, Linux a Zabbix.
 
-![Vagrant, Linux, Zabbix a Git](Iamges/samostatne-prace.png)
+![Vagrant, Linux, Zabbix a Git](../Images/samostatne-prace.png)
 
 ## Zadání
 
