@@ -1,0 +1,200 @@
+HODNOCENÍ - ZABBIX AGENT 2 AUTO-REGISTRACE
+Stav veřejných repozitářů k 20. 11. 2026
+
+Zadání: https://github.com/sposdknl/zbx8-auto-reg
+Metoda: statická kontrola přímých aktuálních souborů na větvi main (raw.githubusercontent.com), skriptů, README a existence odkazovaných obrazových souborů. Zobrazení seznamu souborů na úvodní stránce GitHubu bylo u některých prací zastaralé; rozhodující jsou přímé soubory. Virtuální stroje nebyly spuštěny; obsah snímků ani živá data v Zabbixu nebyly nezávisle ověřeny. Za existenci obou snímků lze proto získat nejvýše 8 z 15 bodů. Stav 404 znamená nenalezený repozitář pod očekávaným názvem, nikoli prokázané neodevzdání.
+
+KRITÉRIA (MAX. 100 BODŮ)
+- Debian 13 a kořenový Vagrantfile: 15 b
+- Oficiální instalace Zabbix Agent 2 8.0: 20 b
+- Server, ServerActive, SPOS, stabilní jedinečný název: 25 b
+- Automatický a opakovatelný provisioning: 15 b
+- Doložení registrace a přicházejících dat: 15 b
+- README a přehlednost odevzdání: 10 b
+
+Známka: 1 = 90-100, 2 = 80-89, 3 = 65-79, 4 = 50-64, 5 = 0-49; N = nelze hodnotit.
+
+SOUHRN
+Andreovský Jan (J0hni-bit): 80/100, známka 2
+Babka David (TenZaTebou): 93/100, známka 1
+Bača Daniel (dabaca4444-alt): N
+Břicháček Jakub (apakubaapa-prog): 90/100, známka 1
+Fendrych Vít (fendvit): 92/100, známka 1
+Ferster Michal (Jetterko): N
+Geťko Daniel (Dandee00): N
+Grafek Vojtěch (Vojtech-G): 0/100, známka 5
+Jirman Karel (kareljirman): 89/100, známka 2
+Jiřička Dennis (PALACINKA-MASTER): 0/100, známka 5
+Kaválek Matyáš (dotcom7789): 71/100, známka 3
+Kňourek Jakub (Terramakingblazer): 84/100, známka 2
+Kozák Daniel (daniel123-sys): 72/100, známka 3
+Kozák Matyáš (asaka-ghost): 38/100, známka 5
+Kozák Vojtěch (V0JT4): 15/100, známka 5
+Kratochvílová Natálie (natal-9): 76/100, známka 3
+Lodr Dominik (D0M1NIK): N
+Moskalová Markéta (Makinka08): 62/100, známka 4
+Podzimek Pavel (Paulie795): 93/100, známka 1
+Rifel Daniel (therealdeleg): 72/100, známka 3
+Rozenský Ladislav (ladarozensky-wq): 85/100, známka 2
+Semerák Jiří (SpiffyGem144415): 0/100, známka 5
+Víšek Jan (kN3dl7): 93/100, známka 1
+Voříšek Matyáš (joyik08): 76/100, známka 3
+Záruba Filip (zarubafilip): 82/100, známka 2
+Závoďančík Martin (Z4vod): 0/100, známka 5
+
+PODROBNÉ HODNOCENÍ
+
+01. Andreovský Jan (J0hni-bit)
+    Repozitář: https://github.com/sposdknl/j0hni-bit-osy-2026-zbx8-auto-reg
+    Výsledek: 80/100, známka 2
+    Body podle kritérií: 15 / 18 / 24 / 10 / 8 / 5
+    Zdůvodnění: Kompletní inline provisioning ve Vagrantfile a dvě dostupné obrazové přílohy. Chybí samostatné vlastní skripty; README je stručné.
+
+02. Babka David (TenZaTebou)
+    Repozitář: https://github.com/sposdknl/tenzatebou-osy-2026-zbx8-auto-reg
+    Výsledek: 93/100, známka 1
+    Body podle kritérií: 15 / 20 / 25 / 15 / 8 / 10
+    Zdůvodnění: Tři navázané provisionery, kontrola verze, trvale uložený název; README odkazuje na registraci i data.
+
+03. Bača Daniel (dabaca4444-alt)
+    Repozitář: https://github.com/sposdknl/dabaca4444-alt-osy-2026-zbx8-auto-reg
+    Výsledek: N - nenalezený repozitář pod očekávaným názvem
+    Zdůvodnění: Repozitář pod očekávaným názvem vrací 404; nelze rozhodnout, zda bylo odevzdáno pod jiným názvem.
+
+04. Břicháček Jakub (apakubaapa-prog)
+    Repozitář: https://github.com/sposdknl/apakubaapa-prog-osy-2026-zbx8-auto-reg
+    Výsledek: 90/100, známka 1
+    Body podle kritérií: 15 / 20 / 25 / 13 / 8 / 9
+    Zdůvodnění: Automatizace a trvalý identifikátor jsou doloženy kódem; instalační kontrola verze při opakování nezachytí epochu 2:.
+
+05. Fendrych Vít (fendvit)
+    Repozitář: https://github.com/sposdknl/fendvit-osy-2026-zbx8-auto-reg
+    Výsledek: 92/100, známka 1
+    Body podle kritérií: 15 / 20 / 25 / 14 / 8 / 10
+    Zdůvodnění: Přehledné skripty, pevný název hosta, dokumentace a odkazy na snímky registrace, šablony a dat.
+
+06. Ferster Michal (Jetterko)
+    Repozitář: https://github.com/sposdknl/jetterko-osy-2026-zbx8-auto-reg
+    Výsledek: N - nenalezený repozitář pod očekávaným názvem
+    Zdůvodnění: Repozitář pod očekávaným názvem vrací 404; nelze rozhodnout, zda bylo odevzdáno pod jiným názvem.
+
+07. Geťko Daniel (Dandee00)
+    Repozitář: https://github.com/sposdknl/dandee00-osy-2026-zbx8-auto-reg
+    Výsledek: N - nenalezený repozitář pod očekávaným názvem
+    Zdůvodnění: Repozitář pod očekávaným názvem vrací 404; nelze rozhodnout, zda bylo odevzdáno pod jiným názvem.
+
+08. Grafek Vojtěch (Vojtech-G)
+    Repozitář: https://github.com/sposdknl/vojtech-g-osy-2026-zbx8-auto-reg
+    Výsledek: 0/100, známka 5
+    Body podle kritérií: 0 / 0 / 0 / 0 / 0 / 0
+    Zdůvodnění: Repozitář obsahuje původní šablonu bez kořenového Vagrantfile a vlastních skriptů. Obrázek je již ve vzorové šabloně.
+
+09. Jirman Karel (kareljirman)
+    Repozitář: https://github.com/sposdknl/kareljirman-osy-2026-zbx8-auto-reg
+    Výsledek: 89/100, známka 2
+    Body podle kritérií: 15 / 20 / 25 / 12 / 8 / 9
+    Zdůvodnění: Vlastní skripty a trvale uložený název; doloženy odkazy na registraci a data. Instalační krok přeskočí již přítomného agenta bez kontroly hlavní verze.
+
+10. Jiřička Dennis (PALACINKA-MASTER)
+    Repozitář: https://github.com/sposdknl/palacinka-master-osy-2026-zbx8-auto-reg
+    Výsledek: 0/100, známka 5
+    Body podle kritérií: 0 / 0 / 0 / 0 / 0 / 0
+    Zdůvodnění: Repozitář je ve stavu původní šablony; chybí kořenový Vagrantfile a vlastní skripty.
+
+11. Kaválek Matyáš (dotcom7789)
+    Repozitář: https://github.com/sposdknl/dotcom7789-osy-2026-zbx8-auto-reg
+    Výsledek: 71/100, známka 3
+    Body podle kritérií: 15 / 18 / 24 / 10 / 0 / 4
+    Zdůvodnění: Automatický inline provisioning existuje, ale README je obecné, neobsahuje důkaz registrace ani data a chybí samostatné skripty.
+
+12. Kňourek Jakub (Terramakingblazer)
+    Repozitář: https://github.com/sposdknl/terramakingblazer-osy-2026-zbx8-auto-reg
+    Výsledek: 84/100, známka 2
+    Body podle kritérií: 15 / 20 / 25 / 15 / 0 / 9
+    Zdůvodnění: Kořenový Vagrantfile spouští dva vlastní skripty; pevný název a opakovatelnost jsou v kódu. README neodkazuje na konkrétní snímky výsledku.
+
+13. Kozák Daniel (daniel123-sys)
+    Repozitář: https://github.com/sposdknl/daniel123-sys-osy-2026-zbx8-auto-reg
+    Výsledek: 72/100, známka 3
+    Body podle kritérií: 15 / 20 / 20 / 9 / 4 / 4
+    Zdůvodnění: Instalace z oficiálního repozitáře a provisioning existují. Konfigurace spoléhá na nahrazení výchozích řádků; README zůstalo převážně šablonou, uveden jeden snímek.
+
+14. Kozák Matyáš (asaka-ghost)
+    Repozitář: https://github.com/sposdknl/asaka-ghost-osy-2026-zbx8-auto-reg
+    Výsledek: 38/100, známka 5
+    Body podle kritérií: 0 / 12 / 20 / 0 / 0 / 6
+    Zdůvodnění: V podadresáři srv01 jsou skripty, ale kořenový Vagrantfile chybí; uvedený instalační skript používá apt bez -y. README popisuje zamýšlený postup.
+
+15. Kozák Vojtěch (V0JT4)
+    Repozitář: https://github.com/sposdknl/v0jt4-osy-2026-zbx8-auto-reg
+    Výsledek: 15/100, známka 5
+    Body podle kritérií: 8 / 0 / 0 / 0 / 0 / 7
+    Zdůvodnění: Přímý zdroj obsahuje kořenový Vagrantfile, ale odkazované soubory install-zabbix-agent2.sh, configure-zabbix-agent2.sh a id_rsa.pub vracejí 404. Provisioning proto nelze spustit z odevzdaných souborů.
+
+16. Kratochvílová Natálie (natal-9)
+    Repozitář: https://github.com/sposdknl/natal-9-osy-2026-zbx8-auto-reg
+    Výsledek: 76/100, známka 3
+    Body podle kritérií: 15 / 18 / 18 / 8 / 8 / 9
+    Zdůvodnění: Kód obsahuje instalaci a konfiguraci i existující snímky hosta a dat. Hostname se mění jen při prvním nahrazení výchozí hodnoty; při opakování je řešení křehké.
+
+17. Lodr Dominik (D0M1NIK)
+    Repozitář: https://github.com/sposdknl/d0m1nik-osy-2026-zbx8-auto-reg
+    Výsledek: N - nenalezený repozitář pod očekávaným názvem
+    Zdůvodnění: Repozitář pod očekávaným názvem vrací 404; nelze rozhodnout, zda bylo odevzdáno pod jiným názvem.
+
+18. Moskalová Markéta (Makinka08)
+    Repozitář: https://github.com/sposdknl/makinka08-osy-2026-zbx8-auto-reg
+    Výsledek: 62/100, známka 4
+    Body podle kritérií: 15 / 12 / 25 / 8 / 0 / 2
+    Zdůvodnění: Vagrantfile a stabilní název jsou připraveny. Instalační skript volá apt bez -y a README obsahuje téměř jen obrázek; chybí snímky registrace a dat.
+
+19. Podzimek Pavel (Paulie795)
+    Repozitář: https://github.com/sposdknl/paulie795-osy-2026-zbx8-auto-reg
+    Výsledek: 93/100, známka 1
+    Body podle kritérií: 15 / 20 / 25 / 15 / 8 / 10
+    Zdůvodnění: Tři provisionery, kontrola verze, perzistentní název, přehledné README a odkazy na snímky registrace a dat.
+
+20. Rifel Daniel (therealdeleg)
+    Repozitář: https://github.com/sposdknl/therealdeleg-osy-2026-zbx8-auto-reg
+    Výsledek: 72/100, známka 3
+    Body podle kritérií: 15 / 12 / 25 / 8 / 4 / 8
+    Zdůvodnění: Vagrantfile a stabilní konfigurace jsou doloženy. Instalační apt nemá -y; README má jen jeden ověřený snímek dat a placeholder odkazu na registraci.
+
+21. Rozenský Ladislav (ladarozensky-wq)
+    Repozitář: https://github.com/sposdknl/ladarozensky-wq-osy-2026-zbx8-auto-reg
+    Výsledek: 85/100, známka 2
+    Body podle kritérií: 15 / 20 / 25 / 15 / 0 / 10
+    Zdůvodnění: Kvalitní instalační a konfigurační skripty s kontrolou verze a perzistentním názvem; README je podrobné, ale neodkazuje na snímky registrace a živých dat.
+
+22. Semerák Jiří (SpiffyGem144415)
+    Repozitář: https://github.com/sposdknl/spiffygem144415-osy-2026-zbx8-auto-reg
+    Výsledek: 0/100, známka 5
+    Body podle kritérií: 0 / 0 / 0 / 0 / 0 / 0
+    Zdůvodnění: Repozitář obsahuje původní šablonu bez kořenového Vagrantfile a vlastních skriptů; obrázek je součástí vzorové šablony.
+
+23. Víšek Jan (kN3dl7)
+    Repozitář: https://github.com/sposdknl/kn3dl7-osy-2026-zbx8-auto-reg
+    Výsledek: 93/100, známka 1
+    Body podle kritérií: 15 / 20 / 25 / 15 / 8 / 10
+    Zdůvodnění: Kompletní automatizace, verifikační kroky, stabilní název a odkazy na snímky registrace a dat.
+
+24. Voříšek Matyáš (joyik08)
+    Repozitář: https://github.com/sposdknl/joyik08-osy-2026-zbx8-auto-reg
+    Výsledek: 76/100, známka 3
+    Body podle kritérií: 15 / 18 / 18 / 9 / 8 / 8
+    Zdůvodnění: Vlastní skripty a snímky výsledku existují. Název vzniká z nového UUID při každém běhu, ale další běh spoléhá na nenahrazení původního řádku.
+
+25. Záruba Filip (zarubafilip)
+    Repozitář: https://github.com/sposdknl/zarubafilip-osy-2026-zbx8-auto-reg
+    Výsledek: 82/100, známka 2
+    Body podle kritérií: 15 / 18 / 25 / 12 / 4 / 8
+    Zdůvodnění: Přímé zdrojové soubory potvrzují kořenový Vagrantfile a oba navázané skripty; oficiální repozitář Zabbix 8.0 i požadované parametry jsou v kódu. Nastavený název po restartu a opakovaném provisioningu zůstává. Instalační a konfigurační skript neukončují běh při chybě; README odkazuje na snímek registrace, nikoli na samostatný snímek příchozích dat.
+
+26. Závoďančík Martin (Z4vod)
+    Repozitář: https://github.com/sposdknl/z4vod-osy-2026-zbx8-auto-reg
+    Výsledek: 0/100, známka 5
+    Body podle kritérií: 0 / 0 / 0 / 0 / 0 / 0
+    Zdůvodnění: Repozitář obsahuje původní šablonu bez kořenového Vagrantfile a vlastních skriptů; obrázek je součástí vzorové šablony.
+
+OBRÁZKY
+Tematické ilustrace a odkazy na autory jsou evidovány v Images/README.md. Binární kopie nelze v tomto prostředí stáhnout, protože přímé síťové spojení ze souborového prostoru je zablokované. Skript Images/stahnout_obrazky.sh připravuje přesné stažení ověřených zdrojových URL.
