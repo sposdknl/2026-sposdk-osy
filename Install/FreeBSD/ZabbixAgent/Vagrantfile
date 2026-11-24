@@ -1,0 +1,29 @@
+IMAGE_NAME = "bento/freebsd-14.3"
+
+Vagrant.configure("2") do |config|
+    config.vm.provider "virtualbox" do |vbox|
+        vbox.memory = 2048
+        vbox.cpus = 4
+    end
+
+    config.vm.define "fbsd14" do |fbsd|
+        fbsd.vm.box = IMAGE_NAME
+        fbsd.vm.network "forwarded_port", guest: 22, host: 2201, host_ip: "127.0.0.1"
+        fbsd.vm.hostname = "fbsd14"
+    end
+
+    config.vm.provision "shell", inline: <<-SHELL
+    # FreeBSD 14.3 je po EOL, balicky jsou sestavene pro novejsi 14.x
+    mkdir -p /usr/local/etc
+    grep -qs IGNORE_OSVERSION /usr/local/etc/pkg.conf || echo 'IGNORE_OSVERSION = true;' >> /usr/local/etc/pkg.conf
+
+    sudo pkg install -y bash
+    SHELL
+
+    # Načtení a provedení scriptu install-zabbix-agent.sh
+    config.vm.provision "shell", path: "install-zabbix-agent.sh"
+
+    # Načtení a provedení scriptu configure-zabbix-agent.sh
+    config.vm.provision "shell", path: "configure-zabbix-agent.sh"
+
+end

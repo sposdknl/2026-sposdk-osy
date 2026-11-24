@@ -2,7 +2,7 @@
 
 Repositories for teaching purposes at SPOS DK
 
-![Ucebna OSY AI](./Images/osy-classroom.png)
+![Operační systémy – SPOS DK 2026/27](./Images/osy-uvod.webp)
 
 Repository pro vyuku na SPOS DK
 
