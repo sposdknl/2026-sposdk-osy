@@ -1,0 +1,267 @@
+HODNOCENÍ INSTALACE ZABBIXU 8.0 LTS
+Samostatná práce OSY 2026  /  26 studentů  /  27. 11. 2026
+
+Zadání: https://github.com/sposdknl/zbx8-inst
+Vzor: https://github.com/sposdknl/2026-sposdk-osy/blob/main/Independent_Work/osy-2026-zbx8-auto-reg/output/txt/hodnoceni_zbx8_auto_reg.txt
+
+METODA
+
+Statická kontrola veřejných repozitářů GitHub Classroom. Při rozporu s náhledem měly přednost přímé
+soubory z větve main. Hodnocení vychází z Vagrantfile, skriptů, README, exportů a dostupnosti
+konkrétních obrazových příloh.
+
+VM nebyly spuštěny. U snímků je ověřena dostupnost souboru. Obsah snímků, živá data, odevzdání v
+Teams a úplná historie hesel nebyly nezávisle ověřeny. V kritériích C a D proto šlo získat nejvýše 3
+ze 4 bodů.
+
+Zadání má u opakovatelnosti rozpor mezi textem a tabulkou. V kritériu E je rozhodující bezpečné
+zacházení s hesly a databází. Samotná absence podpory opakovaného spuštění body nesnižuje. U dvou
+prací dostupné podklady doložily pouze výchozí šablonu.
+
+KRITÉRIA (MAX. 30 BODŮ)
+
+A. Vagrantfile, Debian 13 a přístup k webu - 5 b
+B. Automatická instalace serveru, MariaDB a frontendu - 10 b
+C. Agent 2, místní host a aktuální data - 4 b
+D. Monitoring TLS/SSL certifikátu sposdk.cz - 4 b
+E. Bezpečné zacházení s hesly a provisioning - 3 b
+F. Dokumentace a požadované snímky - 4 b
+
+Známky podle procentních hranic předchozí práce, přepočtené na celé body z 30. 1 = 27-30, 2 = 24-26,
+3 = 20-23, 4 = 15-19, 5 = 0-14.
+
+SOUHRN
+
+Andreovský Jan (J0hni-bit): 27/30, známka 1
+Babka David (TenZaTebou): 28/30, známka 1
+Bača Daniel (dabaca4444-alt): 26/30, známka 2
+Břicháček Jakub (apakubaapa-prog): 27/30, známka 1
+Fendrych Vít (fendvit): 28/30, známka 1
+Ferster Michal (Jetterko): 0/30, známka 5
+Geťko Daniel (Dandee00): 19/30, známka 4
+Grafek Vojtěch (Vojtech-G): 28/30, známka 1
+Jirman Karel (kareljirman): 28/30, známka 1
+Jiřička Dennis (PALACINKA-MASTER): 0/30, známka 5
+Kaválek Matyáš (dotcom7789): 16/30, známka 4
+Kňourek Jakub (Terramakingblazer): 28/30, známka 1
+Kozák Daniel (daniel123-sys): 28/30, známka 1
+Kozák Matyáš (asaka-ghost): 23/30, známka 3
+Kozák Vojtěch (V0JT4): 21/30, známka 3
+Kratochvílová Natálie (natal-9): 25/30, známka 2
+Lodr Dominik (D0M1NIK): 16/30, známka 4
+Moskalová Markéta (Makinka08): 22/30, známka 3
+Podzimek Pavel (Paulie795): 28/30, známka 1
+Rifel Daniel (therealdeleg): 24/30, známka 2
+Rozenský Ladislav (ladarozensky-wq): 28/30, známka 1
+Semerák Jiří (SpiffyGem144415): 3/30, známka 5
+Víšek Jan (kN3dl7): 28/30, známka 1
+Voříšek Matyáš (joyik08): 25/30, známka 2
+Záruba Filip (zarubafilip): 19/30, známka 4
+Závoďančík Martin (Z4vod): 23/30, známka 3
+
+PODROBNÉ HODNOCENÍ
+
+01. Andreovský Jan (J0hni-bit)
+Repozitář: https://github.com/sposdknl/j0hni-bit-osy-2026-zbx8-inst
+Výsledek: 27/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 2 / 3 / 4
+Zdůvodnění: Provisioning instaluje server, MariaDB, Agent 2 a personalizovaný frontend. README
+popisuje místní host a ruční založení sposdk.cz se správnou šablonou a makrem. Předepsaný import
+není doložen. Dostupných je pět odkazovaných snímků.
+
+02. Babka David (TenZaTebou)
+Repozitář: https://github.com/sposdknl/tenzatebou-osy-2026-zbx8-inst
+Výsledek: 28/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 3 / 3 / 4
+Zdůvodnění: Vagrant spouští instalaci a konfiguraci hostů přes PHP a Zabbix API. Doloženy jsou
+export sposdk.cz, chráněné generování hesel a pět odkazovaných snímků webu, hostů, dat a služeb.
+
+03. Bača Daniel (dabaca4444-alt)
+Repozitář: https://github.com/sposdknl/dabaca4444-alt-osy-2026-zbx8-inst
+Výsledek: 26/30, známka 2
+Body A / B / C / D / E / F: 5 / 10 / 2 / 3 / 3 / 3
+Zdůvodnění: Instalace používá Agent 2 a hesla předaná z prostředí. Lokální monitoring využívá
+výchozího hosta. Import exportu je volitelný samostatný krok. Čtyři přílohy se načetly, samostatný
+snímek místních Latest data není identifikovaný. V repozitáři je vidět .vagrant/rgloader.
+
+04. Břicháček Jakub (apakubaapa-prog)
+Repozitář: https://github.com/sposdknl/apakubaapa-prog-osy-2026-zbx8-inst
+Výsledek: 27/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 2 / 3 / 4
+Zdůvodnění: Dva provisionery instalují a konfigurují Zabbix a Agent 2. Místního hosta zakládá API.
+Kontrola certifikátu je řešena založením hosta přes API se správnou šablonou, README uvádí chybějící
+export. Odkazy na čtyři požadované typy snímků jsou dostupné.
+
+05. Fendrych Vít (fendvit)
+Repozitář: https://github.com/sposdknl/fendvit-osy-2026-zbx8-inst
+Výsledek: 28/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 3 / 3 / 4
+Zdůvodnění: Instalace ověřuje verzi 8.0 a vytváří frontend bez průvodce. Druhý skript nastaví
+místního hosta a importuje přiložený export sposdk.cz. Doložené jsou soubory pro všech pět
+požadovaných pohledů.
+
+06. Ferster Michal (Jetterko)
+Repozitář: https://github.com/sposdknl/jetterko-osy-2026-zbx8-inst
+Výsledek: 0/30, známka 5
+Body A / B / C / D / E / F: 0 / 0 / 0 / 0 / 0 / 0
+Zdůvodnění: Ve veřejném stavu je jediný commit a původní README zadání. Přímá adresa kořenového
+Vagrantfile vrací 404. V dostupných podkladech je pouze výchozí šablona.
+
+07. Geťko Daniel (Dandee00)
+Repozitář: https://github.com/sposdknl/dandee00-osy-2026-zbx8-inst
+Výsledek: 19/30, známka 4
+Body A / B / C / D / E / F: 5 / 10 / 1 / 0 / 3 / 0
+Zdůvodnění: Přímý Vagrantfile a scripts/install-zabbix.sh dokládají instalaci MariaDB, frontendu i
+Agentu 2 a náhodné heslo. README obsahuje zadání. Vlastní postup ověření, registrace místního hosta
+ani důkaz importu TLS se nepodařilo doložit.
+
+08. Grafek Vojtěch (Vojtech-G)
+Repozitář: https://github.com/sposdknl/vojtech-g-osy-2026-zbx8-inst
+Výsledek: 28/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 3 / 3 / 4
+Zdůvodnění: Dva skripty instalují Zabbix s Agentem 2 a ověřují služby i HTTP. Místní host a ruční
+import přiloženého exportu jsou popsány v README a doloženy odkazy na snímky dat, importu a služeb.
+
+09. Jirman Karel (kareljirman)
+Repozitář: https://github.com/sposdknl/kareljirman-osy-2026-zbx8-inst
+Výsledek: 28/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 3 / 3 / 4
+Zdůvodnění: Instalace používá Debian 13, ověření verze, automatický frontend a chráněné soubory s
+hesly. API založí místního hosta a importuje upravený export 8.0. Načetlo se pět příloh k ověření.
+
+10. Jiřička Dennis (PALACINKA-MASTER)
+Repozitář: https://github.com/sposdknl/palacinka-master-osy-2026-zbx8-inst
+Výsledek: 0/30, známka 5
+Body A / B / C / D / E / F: 0 / 0 / 0 / 0 / 0 / 0
+Zdůvodnění: Ve veřejném stavu je jediný commit a původní README zadání. Přímá adresa kořenového
+Vagrantfile vrací 404. V dostupných podkladech je pouze výchozí šablona.
+
+11. Kaválek Matyáš (dotcom7789)
+Repozitář: https://github.com/sposdknl/dotcom7789-osy-2026-zbx8-inst
+Výsledek: 16/30, známka 4
+Body A / B / C / D / E / F: 5 / 7 / 1 / 1 / 0 / 2
+Zdůvodnění: Vagrant spouští čtyři instalační skripty. Ty používají klasický zabbix-agent, v
+databázových skriptech je pevná hodnota hesla a automatické vytvoření zabbix.conf.php není doložené.
+README popisuje kontrolu certifikátu, ověřované cesty ke čtyřem snímkům v Images vracejí 404. V
+náhledu je vidět .vagrant.
+
+12. Kňourek Jakub (Terramakingblazer)
+Repozitář: https://github.com/sposdknl/terramakingblazer-osy-2026-zbx8-inst
+Výsledek: 28/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 3 / 3 / 4
+Zdůvodnění: Dva provisionery instalují server a Agent 2 a vytvářejí frontend ze šablony. README
+popisuje ruční přidání místního hosta i import ověřeného exportu. Čtyři uvedené snímky jsou
+dostupné.
+
+13. Kozák Daniel (daniel123-sys)
+Repozitář: https://github.com/sposdknl/daniel123-sys-osy-2026-zbx8-inst
+Výsledek: 28/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 3 / 3 / 4
+Zdůvodnění: Vagrant spouští instalaci a následné nastavení agenta a hostů přes Python. Doložen je
+export sposdk.cz i záložní kontrola TLS přes UserParameter. README popisuje hesla a odkazuje na pět
+dostupných snímků.
+
+14. Kozák Matyáš (asaka-ghost)
+Repozitář: https://github.com/sposdknl/asaka-ghost-osy-2026-zbx8-inst
+Výsledek: 23/30, známka 3
+Body A / B / C / D / E / F: 4 / 10 / 3 / 3 / 0 / 3
+Zdůvodnění: Vlastní projekt se spouští ze srv01 a obsahuje provisioning i PHP šablonu. README
+popisuje místního hosta a ruční import sposdk.cz. Vagrantfile nastavuje pevné výchozí DB heslo. Tři
+dokladové snímky se načetly, snímek služeb na uvedené cestě vrací 404.
+
+15. Kozák Vojtěch (V0JT4)
+Repozitář: https://github.com/sposdknl/v0jt4-osy-2026-zbx8-inst
+Výsledek: 21/30, známka 3
+Body A / B / C / D / E / F: 5 / 10 / 2 / 2 / 2 / 0
+Zdůvodnění: Přímé soubory obsahují funkce pro instalaci a volitelný import, které úvodní náhled
+neukazuje. Oba shell skripty se shodují s dabaca4444-alt a Vagrantfile se liší názvem VM a názvem
+webu. README zůstalo zadáním, chybí vlastní instrukce k předání hesel a doložené snímky. Bodový
+rozpis hodnotí obsah repozitáře.
+
+16. Kratochvílová Natálie (natal-9)
+Repozitář: https://github.com/sposdknl/natal-9-osy-2026-zbx8-inst
+Výsledek: 25/30, známka 2
+Body A / B / C / D / E / F: 5 / 10 / 2 / 2 / 3 / 3
+Zdůvodnění: Provisioning nainstaluje server a automaticky založí hosty přes Python. Skript však
+instaluje klasického zabbix-agent, nikoli Agent 2. Certifikát sleduje vlastním UserParameter bez
+doloženého importu. Dostupné jsou tři snímky k hostům, datům a certifikátu.
+
+17. Lodr Dominik (D0M1NIK)
+Repozitář: https://github.com/sposdknl/d0m1nik-osy-2026-zbx8-inst
+Výsledek: 16/30, známka 4
+Body A / B / C / D / E / F: 5 / 8 / 1 / 1 / 0 / 1
+Zdůvodnění: Vagrant spouští instalaci Agentu 2 i serveru 8.0. Skript používá pevné databázové heslo
+a kopíruje verzovaný zabbix.conf.php. K dispozici je export, postup importu a vlastní doklady dat
+chybějí. README uvádí základní příkazy, adresu a kontrolu služeb.
+
+18. Moskalová Markéta (Makinka08)
+Repozitář: https://github.com/sposdknl/makinka08-osy-2026-zbx8-inst
+Výsledek: 22/30, známka 3
+Body A / B / C / D / E / F: 5 / 10 / 2 / 0 / 3 / 2
+Zdůvodnění: Provisioning nastavuje MariaDB, frontend s vlastním názvem, Agent 2 a náhodné heslo.
+README uvádí šablonu místního hosta a systemctl. Konkrétní doklady Latest data ani konfiguraci
+certifikátu se nepodařilo doložit.
+
+19. Podzimek Pavel (Paulie795)
+Repozitář: https://github.com/sposdknl/paulie795-osy-2026-zbx8-inst
+Výsledek: 28/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 3 / 3 / 4
+Zdůvodnění: Instalační skript ověřuje verzi Zabbixu a nastavuje MariaDB i frontend. Druhý skript
+přidává místní host, importuje export 8.0 a mění heslo Admin. K dispozici jsou čtyři odkazované
+snímky.
+
+20. Rifel Daniel (therealdeleg)
+Repozitář: https://github.com/sposdknl/therealdeleg-osy-2026-zbx8-inst
+Výsledek: 24/30, známka 2
+Body A / B / C / D / E / F: 5 / 10 / 2 / 2 / 3 / 2
+Zdůvodnění: Dvojice skriptů instaluje server a Agent 2, přidává místního hosta přes API a importuje
+sposdk.cz z přiloženého YAML. Heslo databáze se ukládá ve VM. Vlastní postup je součástí README,
+tabulka se snímky má pouze zástupné názvy.
+
+21. Rozenský Ladislav (ladarozensky-wq)
+Repozitář: https://github.com/sposdknl/ladarozensky-wq-osy-2026-zbx8-inst
+Výsledek: 28/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 3 / 3 / 4
+Zdůvodnění: Dva provisionery nastavují Zabbix, lokálního hosta a import certifikátu přes API.
+Doloženy jsou ochrana hesel, export a všech pět odkazovaných snímků. Živý průchod voláním API nebyl
+testován.
+
+22. Semerák Jiří (SpiffyGem144415)
+Repozitář: https://github.com/sposdknl/spiffygem144415-osy-2026-zbx8-inst
+Výsledek: 3/30, známka 5
+Body A / B / C / D / E / F: 3 / 0 / 0 / 0 / 0 / 0
+Zdůvodnění: Kořenový Vagrantfile vytváří Debian 13 s VirtualBoxem a přesměrovává porty. HTTP nemá
+omezení na localhost. Provisioning, README a doklady monitoringu se v dostupném stavu nepodařilo
+doložit.
+
+23. Víšek Jan (kN3dl7)
+Repozitář: https://github.com/sposdknl/kn3dl7-osy-2026-zbx8-inst
+Výsledek: 28/30, známka 1
+Body A / B / C / D / E / F: 5 / 10 / 3 / 3 / 3 / 4
+Zdůvodnění: Automatizace instaluje Zabbix 8.0 a Agent 2, nastaví místního hosta a importuje export s
+explicitním rozhraním agenta. Dokumentace popisuje hesla a ověření služeb. Čtyři odkazované snímky
+jsou dostupné.
+
+24. Voříšek Matyáš (joyik08)
+Repozitář: https://github.com/sposdknl/joyik08-osy-2026-zbx8-inst
+Výsledek: 25/30, známka 2
+Body A / B / C / D / E / F: 5 / 10 / 2 / 2 / 3 / 3
+Zdůvodnění: Automatizace vytváří lokální host a hosta sposdk.cz přes API. Používá však klasického
+agenta a vlastní kontrolu TLS pomocí OpenSSL a UserParameter, bez doloženého importu. Načetly se tři
+odkazované snímky.
+
+25. Záruba Filip (zarubafilip)
+Repozitář: https://github.com/sposdknl/zarubafilip-osy-2026-zbx8-inst
+Výsledek: 19/30, známka 4
+Body A / B / C / D / E / F: 5 / 8 / 1 / 2 / 0 / 3
+Zdůvodnění: Vagrant instaluje Zabbix 8.0 a Agent 2 a kopíruje webovou konfiguraci. Databázové heslo
+je pevně uložené v kódu. README odkazuje na dostupné snímky hostů, certifikátu a služeb. Pokyny k
+importu ani požadovaný export se nepodařilo ověřit.
+
+26. Závoďančík Martin (Z4vod)
+Repozitář: https://github.com/sposdknl/z4vod-osy-2026-zbx8-inst
+Výsledek: 23/30, známka 3
+Body A / B / C / D / E / F: 5 / 10 / 1 / 2 / 3 / 2
+Zdůvodnění: Dva skripty řeší server, vlastní frontend a Agent 2, databázové heslo vzniká ve VM. TLS
+postup popisuje README a existuje přiložený export. Praktický doklad lokálních Latest data a
+konkrétní snímek hodnot certifikátu se nepodařilo ověřit.
